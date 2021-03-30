@@ -1,0 +1,8 @@
+name : MonPlugin
+version : 1.0
+author : blabouille
+main : monplugin.Main
+commands :
+  kit :
+    alias : [ kits ]
+    description : Ceci est une commande pour recuperer des kits
