@@ -28,7 +28,7 @@ public class KitCommand implements CommandExecutor {
 	            } else if (args[0].equals("create")) {
 	                String kitName = args[1];
 	                Inventory playerInventory = player.getInventory();
-	                new Kit(kitName, playerInventory);
+	                Kit.createKit(kitName, playerInventory);
 	            }
 	        } else {
 	            player.sendMessage(ChatColor.RED + "Usage :");

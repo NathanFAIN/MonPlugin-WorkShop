@@ -36,6 +36,12 @@ public class Kit {
     public static Kit getKit(String kitName) {
         return kits.get(kitName);
     }
+    
+    public static Kit createKit(String kitName, Inventory playerInventory) {
+    	Kit kit = new Kit(kitName, playerInventory);
+    	kits.put(kitName, kit);
+        return kit;
+    }
 
     public Kit(String kitName) {
         this.name = kitName;
@@ -72,7 +78,6 @@ public class Kit {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-        kits.put(this.name, this);
     }
 
     public void delete() {
